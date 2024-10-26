@@ -16,14 +16,20 @@
             <th scope="col">Nombre</th>
             <th scope="col">Numero</th>
             <th scope="col">Email</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
         </tr>
         </thead>
         <tbody>
             {% for contacto in contactos %}
-                <th scope="row">{{ contacto.id }}</th>
-                <td>{{ contacto.nombre }}</td>
-                <td>{{ contacto.numero }}</td>
-                <td>{{ contacto.email }}</td>
+                <tr>
+                    <th scope="row">{{ contacto.id }}</th>
+                    <td>{{ contacto.nombre }}</td>
+                    <td>{{ contacto.numero }}</td>
+                    <td>{{ contacto.email }}</td>
+                    <td><a href="#">Borrar</a> </td>
+                    <td><a href="#">Editar</a> </td>
+                </tr>
             {% endfor %}
         </tbody>
     </table>
