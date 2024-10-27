@@ -9,6 +9,8 @@
   <body>
     <h1>Lista de Contactos</h1>
     <br>
+    <a href="{% url 'crear' %}"> Crear </a>
+    <br>
     <table class="table table-hover">
         <thead>
         <tr>
@@ -27,7 +29,7 @@
                     <td>{{ contacto.nombre }}</td>
                     <td>{{ contacto.numero }}</td>
                     <td>{{ contacto.email }}</td>
-                    <td><a href="#">Borrar</a> </td>
+                    <td><a href="{% url 'borrar' contacto.pk %}">Borrar</a> </td>
                     <td><a href="#">Editar</a> </td>
                 </tr>
             {% endfor %}

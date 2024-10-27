@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
+      <script>
+          function fnsave () {
+              alert("Contacto Guardado")
+          }
+      </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Principal</title>
@@ -9,10 +14,15 @@
   <body>
     <h1>Añadir Contacto</h1>
     <br>
+    <a href="{% url 'contactos_list' %}">Inicio</a>
+    <br>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit">
+        <a href="{% url 'contactos_list' %}">
+            <input  type="submit" onclick="fnsave()">
+        </a>
+
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
