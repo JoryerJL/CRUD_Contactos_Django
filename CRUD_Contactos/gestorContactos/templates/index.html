@@ -9,8 +9,9 @@
   <body>
     <h1>Lista de Contactos</h1>
     <br>
-    <a href="{% url 'crear' %}"> Crear </a>
+    <a class="btn btn-outline-success" href="{% url 'crear' %}" role="button">Nuevo Contacto</a>
     <br>
+    <p></p>
     <table class="table table-hover">
         <thead>
         <tr>
@@ -29,8 +30,8 @@
                     <td>{{ contacto.nombre }}</td>
                     <td>{{ contacto.numero }}</td>
                     <td>{{ contacto.email }}</td>
-                    <td><a href="{% url 'borrar' contacto.pk %}">Borrar</a> </td>
-                    <td><a href="#">Editar</a> </td>
+                    <td><a class="btn btn-outline-danger" href="{% url 'borrar' contacto.pk %}">Borrar</a> </td>
+                    <td><a class="btn btn-outline-info" href="{% url 'editar' contacto.pk %}">Editar</a> </td>
                 </tr>
             {% endfor %}
         </tbody>

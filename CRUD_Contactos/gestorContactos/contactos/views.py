@@ -1,6 +1,8 @@
 from lib2to3.fixes.fix_input import context
 
 from django.shortcuts import render, redirect
+from django.template.defaultfilters import title
+
 from .models import *
 from .forms import *
 
@@ -47,5 +49,6 @@ def contactos_edit(request, pk):
 
     context = {
         'form': form,
+        'title': 'Editar Contacto'
     }
     return render(request, 'contactos/create.html', context)
