@@ -1,5 +1,24 @@
 # CRUD_Contactos_Django
-Un crud basico con django, sobre un gestor de contactos
+✅ Gestor de Contactos en Django 👤
+
+Este proyecto es un CRUD básico desarrollado en Django, diseñado como un gestor de contactos. La aplicación permite a los usuarios gestionar información de contactos mediante una interfaz amigable y sencilla.
+
+🔧 Funcionalidades
+   - Crear Contacto: Los usuarios pueden añadir nuevos contactos proporcionando datos como nombre, teléfono y correo electrónico.
+   - Actualizar Contacto: Los contactos existentes pueden actualizarse fácilmente, permitiendo modificaciones de toda la información     
+     guardada.
+   - Eliminar Contacto: Los usuarios pueden eliminar contactos que ya no son necesarios en la lista.
+
+💻 Tecnologías
+   - Django: Framework backend para manejar las operaciones CRUD, gestionar la base de datos y la lógica del servidor.
+   - HTML/CSS: Frontend básico para el diseño de la interfaz de usuario.
+   - SQLite: Base de datos predeterminada para almacenar la información de los contactos.
+
+🗒️ Estructura del Proyecto
+
+   - Models: Define el modelo de Contacto con campos como nombre, teléfono y correo electrónico.
+   - Views: Controladores de vista para cada operación CRUD.
+   - Templates: Archivos HTML para las vistas, incluyendo formularios de creación y actualización de contactos, y la lista de contactos.
 
 <img width="1152" alt="Screenshot 2024-10-26 at 10 01 45 p m" src="https://github.com/user-attachments/assets/7b56b5ed-642c-4719-829a-a231fdebf284">
 <img width="1149" alt="Screenshot 2024-10-26 at 10 01 53 p m" src="https://github.com/user-attachments/assets/4d2b0b7c-a718-4dd1-82ce-b0b86547aef8">
